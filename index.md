@@ -2,62 +2,89 @@
 layout: default
 ---
 
-[Solo](http://chibicode.github.io/solo) is a Jekyll theme that supports **single-page websites** only, but supports them well. Yes, it's responsive.
+## jgeboski's Software Packages
 
-<iframe src="http://ghbtns.com/github-btn.html?user=chibicode&amp;repo=solo&amp;type=watch&amp;count=true&amp;size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe><br/>
+As of **April 7, 2016**, the following repositories have moved:
 
-Looking for a more standard Jekyll theme? Try out [Shiori](http://github.com/ellekasai/shiori) theme, which has Bootstrap integration.
+  - `jgeboski/bitlbee-facebook` -> `bitlbee/bitlbee-facebook`
+  - `jgeboski/bitlbee-steam` -> `bitlbee/bitlbee-steam`
+  - `jgeboski/purple-facebook` -> `dequis/purple-facebook`
 
-## Solo is useful if...
+As of **April 4, 2016**, [@dequis][p2] is the new maintainer of the
+Facebook related projects. The Facebook related packages will cease
+to exist in [@jgeboski][p1]'s repository in the near future, please
+switch to the updated repositories once they are available (this page
+will be updated with the new repositories).
 
-* You want to create an "about me" page from a single markdown file and host it under a custom domain name.
-* You want to create a single-page website that's mostly text, like [Know Your Company](https://knowyourcompany.com/).
-* You want to share a single markdown file and tried GitHub Gist ([example](https://gist.github.com/dypsilon/5819504)), but would like something nicer-looking.
-* You want something like GitHub's [automatic page generator](http://pages.github.com/) for a non-code repository.
+This is an informational page on the software packages developed by
+[@jgeboski][p1]. This page retains a list of actively maintained
+software packages, along with some package repositories.
 
-This page itself is built with Solo. It's generated from [this markdown file](https://github.com/chibicode/solo/blob/gh-pages/_includes/index.md).
+[p1]: https://github.com/jgeboski
+[p2]: https://github.com/dequis
 
-## Usage
+## Software Packages
 
-First, [install Jekyll](http://jekyllrb.com/docs/installation/). Then download Solo from its [GitHub Repository](https://github.com/chibicode/solo). Start Jekyll and you should see this page up and running.
+Below are a list of packages which I develop and maintain.
 
-**The main file you'll be editing is `index.md`**. This becomes the content for the page.
+| Package                | Description                             |
+|------------------------|-----------------------------------------|
+| [bitlbee-facebook][s1] | Facebook protocol plugin for BitlBee.   |
+| [bitlbee-steam][s2]    | Steam protocol plugin for BitlBee.      |
+| [purple-facebook][s3]  | Facebook protocol plugin for libpurple. |
 
-### Other Files
+[s1]: https://github.com/bitlbee/bitlbee-facebook
+[s2]: https://github.com/bitlbee/bitlbee-steam
+[s3]: https://github.com/dequis/purple-facebook/wiki
 
-* Edit `_config.yml` to change the site's title and description.
-* Edit `_includes/head.html` to add custom code to `<head>`.
-* Edit `_includes/scripts.html` to add custom code before `</body>`.
-* Edit `CNAME` to host on a custom domain.
-* Edit `README.md` before pushing your code.
+## Package Repositories
 
-### Don't use `<h1>` tags
+Below are a list of instructions for installing binary packages on
+various *NIX distributions. All binary packages are built using the
+[openSUSE Build Service][l1].
 
-Wthin `index.md`, do not use `<h1>` tags - `<h1>` is reserved for the site title.
+[l1]: https://build.opensuse.org/project/show/home:jgeboski
 
-### Supported Tags
+### Debian and Ubuntu
 
-Solo supports lists, `<hr>`s, `<table>`s,
+| Release Name            | Release Version | Version         |
+|-------------------------|-----------------|-----------------|
+| Debian Wheezy           | 7.0             | `Debian_7.0`    |
+| Debian Jessie           | 8.0             | `Debian_8.0`    |
+| Ubuntu Precise Pangolin | 12.04           | `xUbuntu_12.04` |
+| Ubuntu Trusty Tahr      | 14.04           | `xUbuntu_14.04` |
+| Ubuntu Utopic Unicorn   | 14.10           | `xUbuntu_14.10` |
+| Ubuntu Vivid Vervet     | 15.04           | `xUbuntu_15.04` |
+| Ubuntu Wily Werewolf    | 15.10           | `xUbuntu_15.10` |
 
-> blockquotes, and...
+1. Add the following line to `/etc/apt/sources.list.d/jgeboski.list`:
 
-~~~html
-<pre>code blocks with syntax highlighting.</pre>
-~~~
+   ```
+   deb http://download.opensuse.org/repositories/home:/jgeboski/<version> ./
+   ```
 
-### Keep Solo up to date
+   Notes:
 
-Instead of downloading, you can [fork Solo](https://github.com/chibicode/solo/fork) and use the "upstream" strategy described on [this page](https://help.github.com/articles/fork-a-repo) to keep Solo up to date.
+   1. Replace `<version>` with your version from the table above.
+   2. The `jgeboski.list` file will likely not exist.
 
-## Author
+2. Add the repository key:
 
-Shu Uesugi ([Twitter](http://twitter.com/chibicode)/[GitHub](http://github.com/chibicode)/[G+](https://plus.google.com/110325199858284431541?rel=author)).
+   ```
+   $ wget -O- {{ site.url }}/obs.key | sudo apt-key add -
+   ```
 
-![Shu Uesugi](http://www.gravatar.com/avatar/b868d84bbe2ed30ec45c9253e1c1cefe.jpg?s=200)
+3. Update the package index:
 
-### License
+   `$ sudo apt-get update`
 
-[MIT License](http://chibicode.mit-license.org/)
+4. Install the plugin:
 
-<div class="github-fork-ribbon-wrapper right fixed" style="width: 150px;height: 150px;position: fixed;overflow: hidden;top: 0;z-index: 9999;pointer-events: none;right: 0;"><div class="github-fork-ribbon" style="position: absolute;padding: 2px 0;background-color: #333;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);z-index: 9999;pointer-events: auto;top: 42px;right: -43px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);"><a href="https://github.com/chibicode/solo" style="font: 700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #fff;text-decoration: none;text-shadow: 0 -1px rgba(0, 0, 0, 0.5);text-align: center;width: 200px;line-height: 20px;display: inline-block;padding: 2px 0;border-width: 1px 0;border-style: dotted;border-color: rgba(255, 255, 255, 0.7);">Fork me on GitHub</a></div></div>
+   `$ sudo apt-get install <package>`
+
+   Notes:
+
+   1. Replace `<package>` with a package name from the table above.
+   2. The `bitlbee` packages must be used with the [nightly][r1] repository.
+
+[r1]: http://code.bitlbee.org/debian/
