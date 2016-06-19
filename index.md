@@ -56,6 +56,7 @@ various *NIX distributions. All binary packages are built using the
 | Ubuntu Utopic Unicorn   | 14.10           | `xUbuntu_14.10` |
 | Ubuntu Vivid Vervet     | 15.04           | `xUbuntu_15.04` |
 | Ubuntu Wily Werewolf    | 15.10           | `xUbuntu_15.10` |
+| Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
 
 1. Add the following line to `/etc/apt/sources.list.d/jgeboski.list`:
 
