@@ -53,9 +53,8 @@ various *NIX distributions. All binary packages are built using the
 | Debian Jessie           | 8.0             | `Debian_8.0`    |
 | Ubuntu Precise Pangolin | 12.04           | `xUbuntu_12.04` |
 | Ubuntu Trusty Tahr      | 14.04           | `xUbuntu_14.04` |
-| Ubuntu Utopic Unicorn   | 14.10           | `xUbuntu_14.10` |
-| Ubuntu Vivid Vervet     | 15.04           | `xUbuntu_15.04` |
-| Ubuntu Wily Werewolf    | 15.10           | `xUbuntu_15.10` |
+| Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
+| Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
 
 1. Add the following line to `/etc/apt/sources.list.d/jgeboski.list`:
 
@@ -88,3 +87,10 @@ various *NIX distributions. All binary packages are built using the
    2. The `bitlbee` packages must be used with the [nightly][r1] repository.
 
 [r1]: http://code.bitlbee.org/debian/
+
+### Other distros
+
+Builds for other distros such as CentOS, OpenSUSE, ScientificLinux, SLE and
+Univention are available for the purple-facebook package only. See:
+
+<https://build.opensuse.org/package/show/home:jgeboski/purple-facebook>
