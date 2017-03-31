@@ -4,12 +4,6 @@ layout: default
 
 ## jgeboski's Software Packages
 
-As of **April 7, 2016**, the following repositories have moved:
-
-  - `jgeboski/bitlbee-facebook` -> `bitlbee/bitlbee-facebook`
-  - `jgeboski/bitlbee-steam` -> `bitlbee/bitlbee-steam`
-  - `jgeboski/purple-facebook` -> `dequis/purple-facebook`
-
 As of **April 4, 2016**, [@dequis][p2] is the new maintainer of the
 Facebook related projects. The Facebook related packages will cease
 to exist in [@jgeboski][p1]'s repository in the near future, please
