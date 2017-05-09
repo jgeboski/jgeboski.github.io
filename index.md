@@ -49,6 +49,7 @@ various *NIX distributions. All binary packages are built using the
 | Ubuntu Trusty Tahr      | 14.04           | `xUbuntu_14.04` |
 | Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
 | Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
+| Ubuntu Zesty Zapus      | 17.04           | `xUbuntu_17.04` |
 
 1. Add the following line to `/etc/apt/sources.list.d/jgeboski.list`:
 
