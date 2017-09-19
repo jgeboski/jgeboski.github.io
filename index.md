@@ -52,16 +52,13 @@ various *NIX distributions. All binary packages are built using the
 | Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
 | Ubuntu Zesty Zapus      | 17.04           | `xUbuntu_17.04` |
 
-1. Add the following line to `/etc/apt/sources.list.d/jgeboski.list`:
+1. Create `/etc/apt/sources.list.d/jgeboski.list` with the following content:
 
    ```
    deb http://download.opensuse.org/repositories/home:/jgeboski/<version> ./
    ```
 
-   Notes:
-
-   1. Replace `<version>` with your version from the table above.
-   2. The `jgeboski.list` file will likely not exist.
+   Replace `<version>` with your version from the table above.
 
 2. Add the repository key:
 
