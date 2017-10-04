@@ -66,6 +66,8 @@ various *NIX distributions. All binary packages are built using the
    $ wget -O- {{ site.url }}/obs.key | sudo apt-key add -
    ```
 
+   (**October 2017 update: redownload the key if you're getting key expired**)
+
 3. Update the package index:
 
    `$ sudo apt-get update`
