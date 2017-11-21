@@ -51,6 +51,7 @@ various *NIX distributions. All binary packages are built using the
 | Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
 | Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
 | Ubuntu Zesty Zapus      | 17.04           | `xUbuntu_17.04` |
+| Ubuntu Artful Aardvark  | 17.10           | `xUbuntu_17.10` |
 
 1. Create `/etc/apt/sources.list.d/jgeboski.list` with the following content:
 
