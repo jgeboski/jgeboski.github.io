@@ -52,6 +52,8 @@ various *NIX distributions. All binary packages are built using the
 | Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
 | Ubuntu Zesty Zapus      | 17.04           | `xUbuntu_17.04` |
 | Ubuntu Artful Aardvark  | 17.10           | `xUbuntu_17.10` |
+| Ubuntu Bionic Beaver    | 18.04           | `xUbuntu_18.04` |
+| Ubuntu Cosmic Cuttlefish| 18.10           | `xUbuntu_18.10` |
 
 1. Create `/etc/apt/sources.list.d/jgeboski.list` with the following content:
 
