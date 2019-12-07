@@ -46,12 +46,12 @@ various *NIX distributions. All binary packages are built using the
 | Debian Wheezy           | 7.0             | `Debian_7.0`    |
 | Debian Jessie           | 8.0             | `Debian_8.0`    |
 | Debian Stretch          | 9.0             | `Debian_9.0`    |
-| Ubuntu Precise Pangolin | 12.04           | `xUbuntu_12.04` |
 | Ubuntu Trusty Tahr      | 14.04           | `xUbuntu_14.04` |
 | Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
-| Ubuntu Yakkety Yak      | 16.10           | `xUbuntu_16.10` |
-| Ubuntu Zesty Zapus      | 17.04           | `xUbuntu_17.04` |
-| Ubuntu Artful Aardvark  | 17.10           | `xUbuntu_17.10` |
+| Ubuntu Bionic Beaver    | 18.04           | `xUbuntu_18.04` |
+| Ubuntu Disco Dingo      | 19.04           | `xUbuntu_19.04` |
+| Ubuntu Eoan Ermine      | 19.10           | `xUbuntu_19.10` |
+
 
 1. Create `/etc/apt/sources.list.d/jgeboski.list` with the following content:
 
