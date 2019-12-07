@@ -64,10 +64,10 @@ various *NIX distributions. All binary packages are built using the
 2. Add the repository key:
 
    ```
-   $ wget -O- {{ site.url }}/obs.key | sudo apt-key add -
+   $ wget -O- 'https://build.opensuse.org/projects/home:jgeboski/public_key' | sudo apt-key add -
    ```
 
-   (**October 2017 update: redownload the key if you're getting key expired**)
+   (**December 2019 update: redownload the key if you're getting key expired**)
 
 3. Update the package index:
 
