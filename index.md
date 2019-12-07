@@ -46,6 +46,7 @@ various *NIX distributions. All binary packages are built using the
 | Debian Wheezy           | 7.0             | `Debian_7.0`    |
 | Debian Jessie           | 8.0             | `Debian_8.0`    |
 | Debian Stretch          | 9.0             | `Debian_9.0`    |
+| Debian Buster           | 10              | `Debian_10`     |
 | Ubuntu Trusty Tahr      | 14.04           | `xUbuntu_14.04` |
 | Ubuntu Xenial Xerus     | 16.04           | `xUbuntu_16.04` |
 | Ubuntu Bionic Beaver    | 18.04           | `xUbuntu_18.04` |
